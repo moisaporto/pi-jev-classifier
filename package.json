@@ -1,0 +1,40 @@
+{
+  "name": "pi-jev-classifier",
+  "version": "1.0.0",
+  "description": "Pi extension that routes TypeSafe's Jev classifier through OpenRouter: blocks destructive, irreversible tool calls before they run, verifies test/build output and alerts on hard failures, and ranks workspace files by task relevance. Fails open on errors; ~$0.00002 per call.",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_GITHUB_USERNAME/pi-jev-classifier.git"
+  },
+  "keywords": [
+    "pi-package",
+    "pi",
+    "jev",
+    "classifier",
+    "safety",
+    "guardrail",
+    "openrouter",
+    "typesafe",
+    "agent"
+  ],
+  "files": [
+    "extensions",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20.3"
+  },
+  "pi": {
+    "extensions": ["./extensions/index.ts"]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-ai": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.7.0"
+  }
+}
